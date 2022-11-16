@@ -51,7 +51,7 @@ class StudentTableViewCell: UITableViewCell {
         stackView.axis = .vertical
 
         titleLabel.font = Constants.titleFont
-        subTitleLabel.font = Constants.subTitleFontç
+        subTitleLabel.font = Constants.subTitleFont
     }
 
     private func setupConstraints() {
