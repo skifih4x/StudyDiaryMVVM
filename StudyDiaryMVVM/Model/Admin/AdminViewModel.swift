@@ -28,7 +28,7 @@ class AdminViewModel {
 // MARK: - AdminViewModelInferface
 extension AdminViewModel: AdminViewModelInferface {
     func listButtonTapped() {
-
+        output?.showListStudents()
     }
 
     func evaluationsButtonTapped() {

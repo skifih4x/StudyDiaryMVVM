@@ -68,6 +68,8 @@ class AdminViewController: UIViewController {
         button.setTitle(title, for: .normal)
         button.addTarget(self, action: action, for: .touchUpInside)
         button.setTitleColor(Constants.buttonTextColor, for: .normal)
+        button.backgroundColor = .systemGray
+        button.layer.cornerRadius = 10
 
         stackView.addArrangedSubview(button)
     }
@@ -88,7 +90,7 @@ class AdminViewController: UIViewController {
         NSLayoutConstraint.activate([
             stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor)
+            stackView.widthAnchor.constraint(equalToConstant: 200)
         ])
     }
     // MARK: - Actions

@@ -28,5 +28,14 @@ class Coordinator {
 // MARK: - AdminOutput
 
 extension Coordinator: AdminOutput {
+    func showListStudents() {
+        let listStudentView = assembly.makeListStudent(output: self)
+        navigationViewController?.pushViewController(listStudentView, animated: true)
+    }
+}
+
+// MARK: - AdminOutput
+
+extension Coordinator: ListStudentsOutput {
 
 }

@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - AdminOutput
 protocol AdminOutput: AnyObject {
-
+    func showListStudents()
 }
 
 // MARK: - AdminInput

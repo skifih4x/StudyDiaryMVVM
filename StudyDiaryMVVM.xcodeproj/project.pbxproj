@@ -12,6 +12,12 @@
 		008D68E22923FC2900558197 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D68E12923FC2900558197 /* Coordinator.swift */; };
 		008D68E42923FC6000558197 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D68E32923FC6000558197 /* Assembly.swift */; };
 		008D68E62923FCB100558197 /* AdminIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D68E52923FCB100558197 /* AdminIO.swift */; };
+		008D68E929240FC800558197 /* ListStudentsIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D68E829240FC800558197 /* ListStudentsIO.swift */; };
+		008D68EB29240FD700558197 /* ListStudentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D68EA29240FD700558197 /* ListStudentsViewModel.swift */; };
+		008D68ED29240FE300558197 /* ListStudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D68EC29240FE300558197 /* ListStudentsViewController.swift */; };
+		008D68F0292514D500558197 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D68EF292514D500558197 /* StudentTableViewCell.swift */; };
+		008D68F32925215A00558197 /* StudentsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D68F22925215A00558197 /* StudentsUseCase.swift */; };
+		008D68F6292521E700558197 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D68F5292521E700558197 /* Student.swift */; };
 		00F736CB2923B8D700926596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F736CA2923B8D700926596 /* AppDelegate.swift */; };
 		00F736CD2923B8D700926596 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F736CC2923B8D700926596 /* SceneDelegate.swift */; };
 		00F736D22923B8D700926596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00F736D02923B8D700926596 /* Main.storyboard */; };
@@ -25,6 +31,12 @@
 		008D68E12923FC2900558197 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		008D68E32923FC6000558197 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
 		008D68E52923FCB100558197 /* AdminIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminIO.swift; sourceTree = "<group>"; };
+		008D68E829240FC800558197 /* ListStudentsIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStudentsIO.swift; sourceTree = "<group>"; };
+		008D68EA29240FD700558197 /* ListStudentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStudentsViewModel.swift; sourceTree = "<group>"; };
+		008D68EC29240FE300558197 /* ListStudentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStudentsViewController.swift; sourceTree = "<group>"; };
+		008D68EF292514D500558197 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
+		008D68F22925215A00558197 /* StudentsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsUseCase.swift; sourceTree = "<group>"; };
+		008D68F5292521E700558197 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		00F736C72923B8D700926596 /* StudyDiaryMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyDiaryMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F736CA2923B8D700926596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00F736CC2923B8D700926596 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,9 +60,10 @@
 		008D68DB2923ED7300558197 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				008D68E12923FC2900558197 /* Coordinator.swift */,
 				008D68E32923FC6000558197 /* Assembly.swift */,
+				008D68E12923FC2900558197 /* Coordinator.swift */,
 				008D68DC2923ED7B00558197 /* Admin */,
+				008D68E729240FB000558197 /* ListStudents */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -63,6 +76,61 @@
 				008D68E52923FCB100558197 /* AdminIO.swift */,
 			);
 			path = Admin;
+			sourceTree = "<group>";
+		};
+		008D68E729240FB000558197 /* ListStudents */ = {
+			isa = PBXGroup;
+			children = (
+				008D68E829240FC800558197 /* ListStudentsIO.swift */,
+				008D68EC29240FE300558197 /* ListStudentsViewController.swift */,
+				008D68EA29240FD700558197 /* ListStudentsViewModel.swift */,
+				008D68EE292514C600558197 /* Cell */,
+			);
+			path = ListStudents;
+			sourceTree = "<group>";
+		};
+		008D68EE292514C600558197 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				008D68EF292514D500558197 /* StudentTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		008D68F12925214100558197 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				008D68F22925215A00558197 /* StudentsUseCase.swift */,
+			);
+			name = UseCases;
+			sourceTree = "<group>";
+		};
+		008D68F4292521DF00558197 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				008D68F5292521E700558197 /* Student.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		008D68F72925229200558197 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				00F736CA2923B8D700926596 /* AppDelegate.swift */,
+				00F736CC2923B8D700926596 /* SceneDelegate.swift */,
+				00F736D82923B8D800926596 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		008D68F8292522A000558197 /* Resurces */ = {
+			isa = PBXGroup;
+			children = (
+				00F736D02923B8D700926596 /* Main.storyboard */,
+				00F736D32923B8D800926596 /* Assets.xcassets */,
+				00F736D52923B8D800926596 /* LaunchScreen.storyboard */,
+			);
+			path = Resurces;
 			sourceTree = "<group>";
 		};
 		00F736BE2923B8D700926596 = {
@@ -84,13 +152,11 @@
 		00F736C92923B8D700926596 /* StudyDiaryMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				00F736CA2923B8D700926596 /* AppDelegate.swift */,
-				00F736CC2923B8D700926596 /* SceneDelegate.swift */,
+				008D68F4292521DF00558197 /* Models */,
+				008D68F12925214100558197 /* UseCases */,
 				008D68DB2923ED7300558197 /* Model */,
-				00F736D02923B8D700926596 /* Main.storyboard */,
-				00F736D32923B8D800926596 /* Assets.xcassets */,
-				00F736D52923B8D800926596 /* LaunchScreen.storyboard */,
-				00F736D82923B8D800926596 /* Info.plist */,
+				008D68F8292522A000558197 /* Resurces */,
+				008D68F72925229200558197 /* App */,
 			);
 			path = StudyDiaryMVVM;
 			sourceTree = "<group>";
@@ -188,12 +254,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				008D68EB29240FD700558197 /* ListStudentsViewModel.swift in Sources */,
 				008D68DE2923ED8700558197 /* AdminViewController.swift in Sources */,
 				008D68E62923FCB100558197 /* AdminIO.swift in Sources */,
 				008D68E42923FC6000558197 /* Assembly.swift in Sources */,
 				008D68E02923ED9200558197 /* AdminViewModel.swift in Sources */,
 				008D68E22923FC2900558197 /* Coordinator.swift in Sources */,
+				008D68E929240FC800558197 /* ListStudentsIO.swift in Sources */,
+				008D68F6292521E700558197 /* Student.swift in Sources */,
+				008D68F32925215A00558197 /* StudentsUseCase.swift in Sources */,
 				00F736CB2923B8D700926596 /* AppDelegate.swift in Sources */,
+				008D68ED29240FE300558197 /* ListStudentsViewController.swift in Sources */,
+				008D68F0292514D500558197 /* StudentTableViewCell.swift in Sources */,
 				00F736CD2923B8D700926596 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,7 +415,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W9FSXFWG34;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = StudyDiaryMVVM/Info.plist;
+				INFOPLIST_FILE = StudyDiaryMVVM/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -371,7 +443,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W9FSXFWG34;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = StudyDiaryMVVM/Info.plist;
+				INFOPLIST_FILE = StudyDiaryMVVM/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
